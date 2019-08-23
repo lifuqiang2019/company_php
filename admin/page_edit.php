@@ -1,9 +1,9 @@
 <?php
 include('./header.php');
-include('./lib/alert.php');
+include('../conn.php');
 
 // 接收数据
-$id = $_GET('id');
+$id = $_GET['id'];
 
 // 验证数据有效性
 if(!is_numeric($id)){
