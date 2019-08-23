@@ -1,5 +1,5 @@
 <?php
-include('./lib/session.php');
+include('./lib/alert.php');
 session_start();
 
 $_SESSION = array();  // 将 SESSION 定义为空数组，清除所有数据

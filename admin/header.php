@@ -1,5 +1,5 @@
 <?php
-include('./lib/session.php');
+include('./lib/alert.php');
 session_start();
 if(!isset($_SESSION['id'])) {
     alert('请登录以后在操作', './login.php');
@@ -30,8 +30,8 @@ if(!isset($_SESSION['id'])) {
             <dl>
                 <dt><span class="icon board"></span>单页管理</dt>
                 <dd>
-                    <a href="#">-&emsp;新增单页</a>
-                    <a href="#">-&emsp;单页列表</a>
+                    <a href="./page_new.php">-&emsp;新增单页</a>
+                    <a href="./page_list.php">-&emsp;单页列表</a>
                 </dd>
             </dl>
             <dl>
