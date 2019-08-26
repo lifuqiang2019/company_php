@@ -37,8 +37,8 @@ if(!isset($_SESSION['id'])) {
             <dl>
                 <dt><span class="icon board"></span>新闻管理</dt>
                 <dd>
-                    <a href="#">-&emsp;发布新闻</a>
-                    <a href="#">-&emsp;新闻列表</a>
+                    <a href="./news_new.php">-&emsp;发布新闻</a>
+                    <a href="./news_list.php">-&emsp;新闻列表</a>
                     <a href="#">-&emsp;新闻分类</a>
                 </dd>
             </dl>

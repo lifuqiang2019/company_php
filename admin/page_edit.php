@@ -40,7 +40,8 @@ mysqli_free_result($result);
 
     <div class="mainbox">
         <h4>修改单页</h4>
-        <form action="./page_new_save.php" method="post">
+        <form action="./page_edit_save.php" method="post">
+            <input type="hidden" name="id" value="<?php echo $id;?>" />
             <table class="news_form">
                 <tr>
                     <td>单页模块名：</td>
@@ -48,7 +49,7 @@ mysqli_free_result($result);
                 </tr>
                 <tr>
                     <td>详细内容：</td>
-                    <td><textarea id="kindeditor" name="content"  rows="20" cols="100"><?php echo $row['boardname'];?></textarea></td>
+                    <td><textarea id="kindeditor" name="content"  rows="20" cols="100"><?php echo $row['content'];?></textarea></td>
                 </tr>
                 <tr>
                     <td></td>
